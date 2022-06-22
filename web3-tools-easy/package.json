@@ -1,0 +1,24 @@
+{
+  "name": "web3-tools-easy",
+  "version": "1.0.0",
+  "description": "Web3 frontend tools",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "del dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odiinnn/web3-tools-easy.git"
+  },
+  "author": "odiinnn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/odiinnn/web3-tools-easy/issues"
+  },
+  "homepage": "https://github.com/odiinnn/web3-tools-easy#readme",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
