@@ -1,6 +1,6 @@
 {
   "name": "web3-tools-easy",
-  "version": "3.0.1",
+  "version": "3.1.1",
   "description": "Web3 frontend tools",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
