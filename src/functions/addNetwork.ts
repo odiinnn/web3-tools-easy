@@ -18,10 +18,10 @@ interface AddEthereumChainParameter {
    * @returns True - if the chain was added, false - if not
    */
 
-function addNetwork(account: string, params: AddEthereumChainParameter): boolean {
+async function addNetwork(account: string, params: AddEthereumChainParameter): Promise<boolean> {
     
     try {
-        window.ethereum.request({
+        await window.ethereum.request({
             method: 'wallet_addEthereumChain',
             params: [params, account]
         }).then((result: string) => {
@@ -33,6 +33,6 @@ function addNetwork(account: string, params: AddEthereumChainParameter): boolean
         return false
     }
 
-};
+}
 
 export {addNetwork};

@@ -1,2 +1,2 @@
-declare function connect(): string;
+declare function connect(): Promise<string>;
 export { connect };

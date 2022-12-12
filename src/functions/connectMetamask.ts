@@ -2,9 +2,9 @@
  * 
  * @returns {String} Return empty string if user reject connection request
  */
-function connect(): string {
+async function connect(): Promise<string> {
     if (typeof window !== 'undefined') {
-        return (window.ethereum.request({
+        return await (window.ethereum.request({
             method: 'eth_requestAccounts'
         }));
     } else {

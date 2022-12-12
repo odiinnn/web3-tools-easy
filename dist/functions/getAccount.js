@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAccount = void 0;
-function getAccount() {
+async function getAccount() {
     if (typeof window !== 'undefined') {
-        return (window.ethereum.selectedAddress);
+        return await (window.ethereum.selectedAddress);
     }
     else {
         return '';

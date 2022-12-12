@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.addNetwork = void 0;
-function addNetwork(account, params) {
+async function addNetwork(account, params) {
     try {
-        window.ethereum.request({
+        await window.ethereum.request({
             method: 'wallet_addEthereumChain',
             params: [params, account]
         }).then((result) => {
@@ -17,4 +17,3 @@ function addNetwork(account, params) {
     }
 }
 exports.addNetwork = addNetwork;
-;

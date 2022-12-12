@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.connect = void 0;
-function connect() {
+async function connect() {
     if (typeof window !== 'undefined') {
-        return (window.ethereum.request({
+        return await (window.ethereum.request({
             method: 'eth_requestAccounts'
         }));
     }

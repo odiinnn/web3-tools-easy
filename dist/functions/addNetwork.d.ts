@@ -10,5 +10,5 @@ interface AddEthereumChainParameter {
     blockExplorerUrls?: string[];
     iconUrls?: string[];
 }
-declare function addNetwork(account: string, params: AddEthereumChainParameter): boolean;
+declare function addNetwork(account: string, params: AddEthereumChainParameter): Promise<boolean>;
 export { addNetwork };

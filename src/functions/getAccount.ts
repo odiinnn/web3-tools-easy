@@ -3,9 +3,9 @@
  * @returns {String} Return user account address or empty string if account is not connected
  */
 
-function getAccount(): string {
+async function getAccount(): Promise<string> {
     if (typeof window !== 'undefined') {
-        return (window.ethereum.selectedAddress);
+        return await (window.ethereum.selectedAddress);
     } else {
         return '';
     }
